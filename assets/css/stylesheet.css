@@ -17,11 +17,11 @@
     height: 600px;
 }
 .circle-div{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #000;
-   border: 18px solid #1e213a21;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #000;
+   border: 18px solid #221e3a69;
    position: relative;
    box-shadow: inset 0 5px #00000000,
    0 5px 25px #00000000,
@@ -133,7 +133,6 @@
 .clock-number:nth-child(11) span{
     transform: rotate(-330deg);
 }
-
 #hours{
     width: 100%;
     height: 100%;
@@ -144,9 +143,9 @@
     width: 12px;
     height: 66px;
     border-radius: 6px 6px 3px 3px; 
-    background-color: aqua;
+    background-color: coral;
     position: absolute;
-    left: 140px;
+    left: 142px;
     top:35%;
     box-shadow: 1px 0 4px #00000000;
 }
@@ -156,14 +155,14 @@
     animation: sec 3600s steps(60, end) infinite;
 }
 #minutes::after{
+    content: "";
     position: absolute;
-    contain: "";
     width: 8px;
     height: 80px;
-    border-radius: 4px 4px 2px 2px; 
-    background-color: #fff; 
-    top: 29%;
-    left: calc(50% + 30px);
+    border-radius: 4px 4px 2px 2px;
+    background-color: #fff;
+    top: 22%;
+    left: calc(50% + -38px);
     box-shadow: 1px 2px 3px #00000000;
 }
 #seconds{
@@ -172,8 +171,8 @@
     animation: sec 60s steps(60, end) infinite;
 }
 #seconds::after{
+    content: "";
     position: absolute;
-    contain: "";
     width: 4px;
     height: 107px;
     border-radius: 2px; 
