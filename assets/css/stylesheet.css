@@ -30,16 +30,17 @@
    0 5px 35px #00000000,
    0 5px 35px #00000000;
 }
-.circle-div::after{
+.circle-div::after {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border-radius: 50px;
     background-color: #fff;
-    top: 120px;
-    left: 120px;
-    box-shadow:0 2px 4px #00000026;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    box-shadow: 0 2px 4px #00000026;
 }
 .circle-div li{
     list-style: none;
